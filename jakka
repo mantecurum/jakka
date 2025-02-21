@@ -1,0 +1,5 @@
+#!/bin/sh
+
+# Wrapper script to conveniently execute jakka AWK program.
+
+exec awk -f "$(dirname "$0")/jakka.awk" "$@"
